@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+  <xacro:macro name="model_mover" params="offset_z">
+    <gazebo>
+      <plugin name="model_mover" filename="libgazebo_model_mover.so">
+        <command>
+          <vel>0 0 ${offset_z}</vel>
+          <link>model://my_bot</link>
+        </command>
+      </plugin>
+    </gazebo>
+  </xacro:macro>
+</robot>
