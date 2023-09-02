@@ -5,4 +5,4 @@ This creates a node which posts controller inputs into a topic
 
 Also creates a node which listens to that topic and moves motors accordingly
 
-This was designed before considering autonomous movement, so it will be redesigned once finished
+This was designed before considering autonomous movement, so it will be redesigned once Nav2 has been set up
